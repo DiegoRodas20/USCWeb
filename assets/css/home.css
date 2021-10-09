@@ -2402,7 +2402,7 @@ button:focus {
 .textSwal{
   color: #111111 !important;
   text-align: justify !important;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .nombreYape{
