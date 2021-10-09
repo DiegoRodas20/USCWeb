@@ -2098,7 +2098,7 @@ button:focus {
 /* -----------------------
     38. Scroll Up CSS
 --------------------------*/
-#scrollUp {
+#floatButtons {
   text-align: center;
   bottom: 40px;
   cursor: pointer;
@@ -2108,7 +2108,7 @@ button:focus {
   z-index: 999;
   border-radius: 50px 50px 4px 4px;
 }
-#scrollUp i {
+#floatButtons i {
   background: #21a7d0;
   border-radius: 50%;
   height: 40px;
@@ -2121,13 +2121,13 @@ button:focus {
   margin-left: 2px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
 }
-#scrollUp i:hover {
+#floatButtons i:hover {
   background-color: #1a84a4;
 }
-#scrollUp.orange-color i {
+#floatButtons.orange-color i {
   background: #073982;
 }
-#scrollUp.orange-color i:hover {
+#floatButtons.orange-color i:hover {
   background-color: #062b61;
 }
 /*Pulse Border Animation*/
@@ -2379,4 +2379,39 @@ button:focus {
   color: #073982;
   margin-bottom: 4rem;
   margin-top: 2rem;
+}
+
+.yape{
+  border-radius: 50%;
+  height: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 42px;
+  color: #fff;
+  line-height: 36px;
+  transition: all 0.3s ease;
+  margin-left: 2px;
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 40%);
+}
+
+.titleSwal {
+  color: #062b61 !important;
+  font-weight: bolder !important;
+}
+
+.textSwal{
+  color: #111111 !important;
+  text-align: justify !important;
+  font-style: italic;
+}
+
+.nombreYape{
+  font-weight: bolder;
+  text-align: center;
+  font-style: normal;
+}
+
+.bodySwal{
+  background: #f9f8f8 !important;
+  width: 43em !important;
 }

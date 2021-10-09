@@ -269,21 +269,71 @@
         });
     }
     
-    // scrollTop init	
-    var totop = $('#scrollUp');    
+    // Float Buttons	
+    var floatButtons = $('#floatButtons');    
+    
     win.on('scroll', function() {
         if (win.scrollTop() > 150) {
-            totop.fadeIn();
+            floatButtons.fadeIn();
         } else {
-            totop.fadeOut();
+            floatButtons.fadeOut();
         }
     });
-    totop.on('click', function() {
+
+    // Scroll Button
+    var btnScroll = $('#scrollUp');
+    btnScroll.on('click', function() {
         $("html,body").animate({
             scrollTop: 0
         }, 500)
     });
 
+    // Yape SweetAlert
+    var yape = $('#yape');
+
+    yape.on('click', function(){
+        Swal.fire({
+            title: 'Mejoremos la USC',
+            showClass: {
+                popup: 'animated bounceInLeft'
+              },
+              hideClass: {
+                popup: 'animated bounceOutLeft'
+              }
+            ,            
+            html: 'Poco a poco vamos mejorando nuestro contenido, esperemos que con estos aportes podamos hacer muchas mejores cosas para ustedes. <br><br>La cuenta se encuentra a nombre de uno de nuestros decanos: <br><br> <div class="nombreYape">Diego Rodas García</div> <br> Para evitar algun tipo de estafa o edición malintencionada, recuerda revisar la página oficial de nuestra universidad antes de realizar algun yapeo, gracias.',
+            imageUrl: "../../assets/images/otros/yapeqr.jpeg",
+            imageWidth: 200,
+            imageHeight: 200,
+            imageAlt: 'codigo qr',
+            confirmButtonText:'Vale',
+            confirmButtonColor: '#073982',
+            customClass: {
+                popup: 'bodySwal',
+                title: 'titleSwal',
+                htmlContainer: 'textSwal'
+            }
+        }).then( result => {
+            Swal.fire({
+                title: 'Muchas Gracias por tu aporte',
+                showClass: {
+                    popup: 'animated bounceInLeft'
+                  },
+                  hideClass: {
+                    popup: 'animated bounceOutLeft'
+                  }
+                ,            
+                confirmButtonText:'Vale',
+                confirmButtonColor: '#073982',
+                customClass: {
+                    popup: 'bodySwal',
+                    title: 'titleSwal',
+                    htmlContainer: 'textSwal'
+                }
+            })
+        })
+    })
+      
     //canvas menu
     var navexpander = $('#nav-expander');
     if(navexpander.length){
