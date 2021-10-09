@@ -1,1 +1,5 @@
-<?php require_once("./app/pages/home.html") ?>
+<?php 
+header("Status: 301 Moved Permanently");
+header("Location: https://www.usideralcarrion.com");
+exit;
+require_once("./app/pages/home.html") ?>
